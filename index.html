@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drinks Mata</title>
+    <link rel="shortcut icon" href="images/" />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="css/devv.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+<!--Header-->
+<div class="header-wrap classicHeader animated d-flex">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <!--Desktop Logo-->
+            <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
+                <a href="#">
+                    Drinks Mata
+                </a>
+            </div>
+            <!--End Desktop Logo-->
+            <div class="col-2 col-sm-3 col-md-3 col-lg-8">
+                <div class="d-block d-lg-none">
+                    <button type="button" class="btn--link site-header__menu js-mobile-nav-toggle mobile-nav--open">
+                        <i class="icon anm anm-times-l"></i>
+                        <i class="anm anm-bars-r"></i>
+                    </button>
+                </div>
+                <!--Desktop Menu-->
+                <nav class="grid__item" id="AccessibleNav">
+                    <!-- for mobile -->
+                    <ul id="siteNav" class="site-nav medium center hidearrow">
+                        <li class="lvl1 parent megamenu"><a href="#">Home <i class="anm anm-angle-down-l"></i></a></li>
+                        <li class="lvl1 parent megamenu"><a href="#">Shop <i class="anm anm-angle-down-l"></i></a></li>
+                        <li class="lvl1 parent megamenu"><a href="#">Product <i class="anm anm-angle-down-l"></i></a></li>
+                        <li class="lvl1 parent dropdown"><a href="#">Pages <i class="anm anm-angle-down-l"></i></a></li>
+                        <li class="lvl1 parent dropdown"><a href="#">Blog <i class="anm anm-angle-down-l"></i></a></li>
+                        <li><button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button></li>
+                    </ul>
+                </nav>
+                <!--End Desktop Menu-->
+            </div>
+            <!--Mobile Logo-->
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 d-block d-lg-none mobile-logo">
+                <div class="logo">
+                    <a href="#">
+                        Drinks Mata
+                    </a>
+                </div>
+            </div>
+            <!--Mobile Logo-->
+            <div class="col-4 col-sm-3 col-md-3 col-lg-2">
+                <div class="site-cart">
+                    <a href="#" class="site-header__cart" title="Cart">
+                        <i class="icon anm anm-bag-l"></i>
+                        <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+                    </a>
+
+                </div>
+                <div class="site-header__search">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Header-->
+<!--Mobile Menu-->
+<div class="mobile-nav-wrapper" role="navigation">
+    <div class="closemobileMenu"><i class="icon anm anm-times-l pull-right"></i> Close Menu</div>
+    <ul id="MobileNav" class="mobile-nav">
+        <li class="lvl1 parent megamenu"><a href="#">Home <i class="anm anm-plus-l"></i></a></li>
+        <li class="lvl1 parent megamenu"><a href="#">Shop <i class="anm anm-plus-l"></i></a></li>
+        <li class="lvl1 parent megamenu"><a href="#">Product <i class="anm anm-plus-l"></i></a></li>
+        <li class="lvl1 parent megamenu"><a href="#">Pages <i class="anm anm-plus-l"></i></a></li>
+    </ul>
+</div>
+
+<div id="page-content">
+    <!--Home slider-->
+    <div class="slideshow slideshow-wrapper pb-section sliderFull">
+        <div class="home-slideshow">
+            <div class="slide">
+                <div class="blur-up lazyload bg-size">
+                    <img class="blur-up lazyload bg-img" src="images/drinks-images/banner1.png" alt="" title=""/>
+                    <div class="slideshow__text-wrap slideshow__overlay classic bottom">
+                        <div class="slideshow__text-content bottom">
+                            <div class="wrap-caption center">
+                                <h2 class="h1 mega-title slideshow__title">Shop Your Favourite Drinks</h2>
+                                <span class="mega-subtitle slideshow__subtitle">Get it delivered to your
+                                    doorstep</span>
+                                <span class="btn">Shop now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="blur-up lazyload bg-size">
+                    <img class="blur-up lazyload bg-img"
+                         data-src="images/drinks-images/bacardi.jpg"
+                         src="images/drinks-images/bacardi.jpg" alt="" title=""/>
+                    <div class="slideshow__text-wrap slideshow__overlay classic bottom">
+                        <div class="slideshow__text-content bottom">
+                            <div class="wrap-caption center">
+                                <h2 class="h1 mega-title slideshow__title">Book Us For Your Events</h2>
+                                <span class="mega-subtitle slideshow__subtitle">Birthdays, Weddings, Anniversary</span>
+                                <span class="btn">Book now</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--New Arrivals-->
+<div class="product-rows section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="section-header text-center">
+                    <h2 class="h2">Drinks Our Customers Love</h2>
+                </div>
+            </div>
+        </div>
+        <div class="productSlider-fullwidth grid-products grid-products-hover-btn">
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="#" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/flirtvodkacaramel.png"
+                             alt="image" title="product">
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/flirtvodkachocolate.png"
+                             alt="image" title="product">
+                        <!-- End hover image -->
+                    </a>
+                    <!-- end product image -->
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0">Add To Cart </button>
+                    </form>
+                    <div class="button-set">
+                        <a href="#" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal"
+                           data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="#">Vodka</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="old-price">$500.00</span>
+                        <span class="price">$600.00</span>
+                    </div>
+                    <!-- End product price -->
+
+                </div>
+                <!-- End product details -->
+            </div>
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="#" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/JW%20red.png" alt="image" title="product">
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/JW%20black.png" alt="image" title="product">
+                        <!-- End hover image -->
+                    </a>
+                    <!-- end product image -->
+
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0"> Select Options </button>
+                    </form>
+                    <div class="button-set">
+                        <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="#">Johnny Walker</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="price">$748.00</span>
+                    </div>
+                    <!-- End product price -->
+                </div>
+                <!-- End product details -->
+            </div>
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="#" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/baileys.png" alt="image" title="product">
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/Amarula.png" alt="image" title="product">
+                        <!-- End hover image -->
+                    </a>
+                    <!-- end product image -->
+
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0">Add To Cart</button>
+                    </form>
+                    <div class="button-set">
+                        <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="#">Baileys</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="price">$550.00</span>
+                    </div>
+                    <!-- End product price -->
+                </div>
+                <!-- End product details -->
+            </div>
+
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="#" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/AV%20blue.png" alt="image" title="product" />
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/AV%20citron.png" alt="image" title="product" />
+                        <!-- End hover image -->
+                        <!-- product label -->
+                        <div class="product-labels rounded"><span class="lbl on-sale">Sale</span></div>
+                        <!-- End product label -->
+                    </a>
+                    <!-- end product image -->
+
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0">Add To Cart</button>
+                    </form>
+                    <div class="button-set">
+                        <a href="#" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal"
+                           data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="">Absolut Vodka</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="old-price">$900.00</span>
+                        <span class="price">$788.00</span>
+                    </div>
+                    <!-- End product price -->
+                </div>
+                <!-- End product details -->
+            </div>
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/CR%20red.png" alt="image" title="product" />
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/CR%20white.png" alt="image" title="product" />
+                        <!-- End hover image -->
+                    </a>
+                    <!-- end product image -->
+
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0">Select Options</button>
+                    </form>
+                    <div class="button-set">
+                        <a href="#" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal"
+                           data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="#">Chamdor</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="price">$550.00</span>
+                    </div>
+                    <!-- End product price -->
+                </div>
+                <!-- End product details -->
+            </div>
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="#" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/corona.png" alt="image" title="product" />
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/carlo%20rossi.png" alt="image" title="product" />
+                        <!-- End hover image -->
+                    </a>
+                    <!-- end product image -->
+
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0">Select Options</button>
+                    </form>
+                    <div class="button-set">
+                        <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="#">Corona</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="price">$550.00</span>
+                    </div>
+                    <!-- End product price -->
+                </div>
+                <!-- End product details -->
+            </div>
+            <div class="col-12 item">
+                <!-- start product image -->
+                <div class="product-image">
+                    <!-- start product image -->
+                    <a href="#" class="grid-view-item__link">
+                        <!-- image -->
+                        <img class="primary blur-up lazyload" src="images/drinks-images/corona.png" alt="image" title="product" />
+                        <!-- End image -->
+                        <!-- Hover image -->
+                        <img class="hover blur-up lazyload" src="images/drinks-images/carlo%20rossi.png" alt="image" title="product" />
+                        <!-- End hover image -->
+                    </a>
+                    <!-- end product image -->
+
+                    <!-- Start product button -->
+                    <form class="variants add" action="#" method="post">
+                        <button class="btn btn-addto-cart" type="button" tabindex="0">Select Options</button>
+                    </form>
+                    <div class="button-set">
+                        <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
+                            <i class="icon anm anm-search-plus-r"></i>
+                        </a>
+                        <div class="wishlist-btn">
+                            <a class="wishlist add-to-wishlist" href="#">
+                                <i class="icon anm anm-heart-l"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end product button -->
+                </div>
+                <!-- end product image -->
+
+                <!--start product details -->
+                <div class="product-details text-center">
+                    <!-- product name -->
+                    <div class="product-name">
+                        <a href="#">Corona</a>
+                    </div>
+                    <!-- End product name -->
+                    <!-- product price -->
+                    <div class="product-price">
+                        <span class="price">$550.00</span>
+                    </div>
+                    <!-- End product price -->
+                </div>
+                <!-- End product details -->
+            </div>
+
+        </div>
+    </div>
+</div>
+<!--End Featured Product-->
+
+
+<!--Collection Box slider-->
+
+
+
+
+<div class="collection-box section">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="section-header text-center">
+                    <h2 class="h2">Best Selling Products</h2>
+                </div>
+            </div>
+        </div>
+        <div class="collection-grid">
+            <div class="collection-grid-item">
+                <a href="#" class="collection-grid-item__link">
+                    <img src="images/drinks-images/cerveza-corona.png" alt="Corona" class="blur-up lazyload"/>
+                    <div class="collection-grid-item__title-wrapper">
+                        <h3 class="collection-grid-item__title btn btn--secondary no-border">Corona</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="collection-grid-item">
+                <a href="#" class="collection-grid-item__link">
+                    <img class="blur-up lazyload" src="images/drinks-images/henny.png" alt="henny"/>
+                    <div class="collection-grid-item__title-wrapper">
+                        <h3 class="collection-grid-item__title btn btn--secondary no-border">Hennessy</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="collection-grid-item blur-up lazyloaded">
+                <a href="#" class="collection-grid-item__link">
+                    <img src="images/drinks-images/budweiser-logo.png" alt="budweiser" class="blur-up lazyload"/>
+                    <div class="collection-grid-item__title-wrapper">
+                        <h3 class="collection-grid-item__title btn btn--secondary no-border">Budweiser</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="collection-grid-item">
+                <a href="#" class="collection-grid-item__link">
+                    <img src="images/drinks-images/coca-cola-bottle.png" alt="cocacola" class="blur-up lazyload"/>
+                    <div class="collection-grid-item__title-wrapper">
+                        <h3 class="collection-grid-item__title btn btn--secondary no-border">CocaCola</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="collection-grid-item">
+                <a href="#" class="collection-grid-item__link">
+                    <img src="images/drinks-images/ciroc-vodka-logo.png" alt="ciroc" class="blur-up lazyload"/>
+                    <div class="collection-grid-item__title-wrapper">
+                        <h3 class="collection-grid-item__title btn btn--secondary no-border">Ciroc</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="collection-grid-item">
+                <a href="#" class="collection-grid-item__link">
+                    <img src="images/drinks-images/jack-daniels-label.png" alt="JD" class="blur-up lazyload"/>
+                    <div class="collection-grid-item__title-wrapper">
+                        <h3 class="collection-grid-item__title btn btn--secondary no-border">Jack Daniels</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Collection Box slider-->
+
+<!--Logo Slider-->
+
+
+<div class="section logo-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="section-header text-center">
+                    <h2 class="h2">Our Featured Brands</h2>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="logo-bar">
+                    <div class="logo-bar__item">
+                        <img src="images/drinks-images/Remy-Martin-Logo.jpg" alt="" title=""/>
+                    </div>
+                    <div class="logo-bar__item">
+                        <img src="images/drinks-images/Coca-Cola-Logo.jpg" alt="" title=""/>
+                    </div>
+                    <div class="logo-bar__item">
+                        <img src="images/drinks-images/0040_Jameson-Logo.jpg" alt="" title=""/>
+                    </div>
+                    <div class="logo-bar__item">
+                        <img src="images/drinks-images/Jack-Daniels-Logo.jpg" alt="" title=""/>
+                    </div>
+                    <div class="logo-bar__item">
+                        <img src="images/drinks-images/Heineken-Logo.jpg" alt="" title=""/>
+                    </div>
+                    <div class="logo-bar__item">
+                        <img src="images/drinks-images/Guinness-Logo-tumb.jpg" alt="" title=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--End Logo Slider-->
+
+
+<section class="contact" id="contact">
+    <div class="main-contact">
+        <div class="contact-content">
+            <li><a href="#">Shop now</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Faq</a></li>
+            <li><a href="#">Contact</a></li>
+        </div>
+
+        <div class="contact-content">
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Store Policy</a></li>
+            <li><a href="#">Payment Methods</a></li>
+        </div>
+
+        <div class="contact-content">
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Tel: 123-456-7890</a></li>
+        </div>
+
+        <div class="contact-content">
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Pinterest</a></li>
+        </div>
+
+    </div>
+
+    <div class="action">
+        <form>
+           <label> <input type="email" name="email" placeholder="Your Email" required>
+            <input type="submit" name="submit" value="Submit" required></label>
+        </form>
+    </div>
+</section>
+
+
+<script src="js/vendor/jquery-3.3.1.min.js"></script>
+<script src="js/vendor/modernizr-3.6.0.min.js"></script>
+<script src="js/vendor/jquery.cookie.js"></script>
+<script src="js/vendor/wow.min.js"></script>
+<!-- Including Javascript -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/lazysizes.js"></script>
+<script src="js/main.js"></script>
+
+
+</body>
+</html>
